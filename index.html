@@ -58,7 +58,7 @@ nav a:hover {
 
 /* ===== ヒーロー ===== */
 .hero {
-  height: 150vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -88,7 +88,7 @@ nav a:hover {
 }
 
 .hero p {
-  font-size: 20px;
+  font-size: 15px;
   margin-top: 10px;
   opacity: 0.8;
 }
@@ -159,21 +159,30 @@ a:hover { color: #333333; }
 a:active { color: #333333; }
 /* ===== スマホ対応 ===== */
 @media(max-width:768px){
+  nav {
+      padding: 15px 15px; /* 左右の余白を少し詰める */
+flex-wrap: nowrap; /* 折り返しを禁止 */
+      gap: 10px;
+    }
 
-  nav{
-    flex-direction:column;
-    gap:15px;
-  }
+    nav h2 {
+      font-size: 20px; /* ロゴを少し小さく */
+    }
 
-  nav ul{
-    flex-direction:column;
-    gap:10px;
-    align-items:center;
-  }
+    nav ul {
+      display: flex; /* 非表示を解除 */
+      gap: 15px;    /* メニュー間の幅を狭く */
+    }
 
-  .hero h1{
-    font-size:40px;
-  }
+    nav a {
+      font-size: 14px; /* 文字をスマホサイズに調整 */
+    }
+    .hero {
+      height: 150vh;
+    }
+    .hero h1 {
+      font-size: 36px;
+    }
 
 
 }
@@ -188,7 +197,7 @@ a:active { color: #333333; }
   <ul>
     <li><a href="#">Home</a></li>
     <li><a href="#">About</a></li>
-    <li><a href="#">Contact</a></li>
+  <li><a href="https://bynumbers.tokyo/contact" target="_blank" rel="noopener">Contact</a></li>
   </ul>
 </nav>
 
@@ -220,7 +229,7 @@ a:active { color: #333333; }
 
 <footer>
   © 2025 GOOD FARM - Natural & Tech</br>
-  <a href="https://www.instagram.com/bynumbers.llc/" target="_blank" ><img src="img/instagram-svgrepo-com.svg"  alt="logo" width="2%"></a>&nbsp;&nbsp;&nbsp;
+  <a href="https://www.instagram.com/good.farm99" target="_blank" ><img src="img/instagram-svgrepo-com.svg"  alt="logo" width="2%"></a>&nbsp;&nbsp;&nbsp;
 © 2025合同会社byNumbers　development by <a href="https://bynumbers.tokyo">byNumbers.LLC</a></br></p>
 </footer>
 
