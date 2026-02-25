@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GOOD FARM</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #f2efe9, #ffffff);
+  color: #333333;
+  overflow-x: hidden;
+}
+
+/* ===== ナビゲーション ===== */
+nav {
+  position: fixed;
+  width: 100%;
+  background: rgba(255,255,255,0.9);
+  backdrop-filter: blur(10px);
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+nav h2 {
+  color: #1e9c47;
+  font-weight: 800;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #1e9c47;
+}
+
+/* ===== ヒーロー ===== */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero img {
+  width: 250px;
+}
+
+#logo{
+  animation: float 5s ease-in-out infinite;
+
+}
+@keyframes float {
+  0%,100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.hero h1 {
+  font-size: 60px;
+  color: #1e9c47;
+  margin-top: 30px;
+  font-weight: 800;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-top: 10px;
+  opacity: 0.8;
+}
+
+.button {
+  margin-top: 40px;
+  padding: 15px 40px;
+  background: #1e9c47;
+  color: white;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background: #157a35;
+  transform: scale(1.05);
+}
+
+/* ===== セクション ===== */
+.section {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #1e9c47;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.card {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  width: 300px;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+  border:1px solid rgba(0,0,0,0.05);
+
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+/* ===== フッター ===== */
+footer {
+  background: #1e9c47;
+  color: white;
+  padding: 40px;
+  text-align: center;
+}
+a:link { color: #333333; }
+a:visited { color: #333333; }
+a:hover { color: #333333; }
+a:active { color: #333333; }
+/* ===== スマホ対応 ===== */
+@media(max-width: 768px) {
+  .hero h1 {
+    font-size: 40px;
+  }
+  nav {
+    padding: 15px 20px;
+  }
+  nav ul {
+    display: none;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+
+  <h2>   <img  width="6%" height="6%" src="img/icon@4x.png" alt="logo"> GOOD FARM</h2>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+
+<section class="hero">
+    <h1></br></h1>
+  <img id="logo" src="img/goodfarmlogFIX@4x.png" alt="logo">
+  <h1>Natural & Tech</h1>
+
+  <h2></h2>
+  <div class="cards">
+    <div class="card">
+      <h3> Smart Farming</h3>
+      <p>IoTとデータで</br>自社農場運営</p>
+    </div>
+    <div class="card">
+      <h3>Natural & Echo</h3>
+      <p>環境にやさしい持続可能な農業</p>
+    </div>
+    <div class="card">
+      <h3>Remote Technology</h3>
+      <p>リモートテクノロジーで緩やかに働ける農業を</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+
+</section>
+
+<footer>
+  © 2025 GOOD FARM - Natural & Tech</br>
+  <a href="https://www.instagram.com/bynumbers.llc/" target="_blank" ><img src="img/instagram-svgrepo-com.svg"  alt="logo" width="2%"></a>&nbsp;&nbsp;&nbsp;
+© 2025合同会社byNumbers　development by <a href="https://bynumbers.tokyo">byNumbers.LLC</a></br></p>
+</footer>
+
+</body>
+</html>
