@@ -158,16 +158,24 @@ a:visited { color: #333333; }
 a:hover { color: #333333; }
 a:active { color: #333333; }
 /* ===== スマホ対応 ===== */
-@media(max-width: 768px) {
-  .hero h1 {
-    font-size: 40px;
+@media(max-width:768px){
+
+  nav{
+    flex-direction:column;
+    gap:15px;
   }
-  nav {
-    padding: 15px 20px;
+
+  nav ul{
+    flex-direction:column;
+    gap:10px;
+    align-items:center;
   }
-  nav ul {
-    display: none;
+
+  .hero h1{
+    font-size:40px;
   }
+
+
 }
 </style>
 </head>
