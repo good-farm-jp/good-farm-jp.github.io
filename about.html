@@ -58,7 +58,7 @@ nav a:hover {
 
 /* ===== ヒーロー ===== */
 .hero {
-  height: 150vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -71,6 +71,7 @@ nav a:hover {
   width: 250px;
 }
 #digicon{
+  margin-top:10%
   min-width:60px;
   height:auto;
 
@@ -124,31 +125,6 @@ nav a:hover {
   margin-bottom: 20px;
   color: #1e9c47;
 }
-
-.cards {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
-  margin-top: 50px;
-}
-
-.card {
-  font-family: "Zen Kaku Gothic New", sans-serif;
-
-  background: white;
-  padding: 40px;
-  border-radius: 20px;
-  width: 300px;
-  box-shadow: 0 10px 10px rgba(0,0,0,0.1);
-  border:1px solid rgba(0,0,0,0.05);
-
-  transition: 0.3s;
-}
-
-.card:hover {
-  transform: translateY(-10px);
-}
 .concept-card {
       background: white;
       border-radius: 24px;
@@ -156,6 +132,7 @@ nav a:hover {
       padding: 48px;
       max-width: 800px;
       position: relative;
+      overflow: hidden;
     }
 
 
@@ -374,7 +351,7 @@ flex-wrap: nowrap; /* 折り返しを禁止 */
       font-size: 14px; /* 文字をスマホサイズに調整 */
     }
     .hero {
-      height: 160vh;
+      height: 80vh;
     }
     .hero h1 {
       font-size: 36px;
@@ -398,9 +375,7 @@ flex-wrap: nowrap; /* 折り返しを禁止 */
 </nav>
 
 <section class="hero">
-    <h1></br></h1>
-  <img id="logo" src="img/goodfarmlogFIX@4x.png" alt="logo">
-  <h1>Natural & Tech</h1>
+<img id="digicon" width="6%" height="6%" src="img/icon@4x.png" alt="logo"> </br>
   <div class="concept-card">
     <!-- 背景装飾 -->
 
@@ -436,77 +411,23 @@ flex-wrap: nowrap; /* 折り返しを禁止 */
 
     <!-- コンセプト文 -->
     <div class="concept-text">
-      <p>
-        <span class="highlight-box gradient-right">
-          IoTと環境負荷を抑えたエコシステム。
-        </span>
-      </p>
-      <p>
-        <span class="highlight-box gradient-left">
-          そして、働く人のためのリモート技術。
-        </span>
-      </p>
+
       <p class="final-message">
-        私たちは、<span class="badge">スモールスマート</span>な農業を行います。
+      <span class="badge">  運営：合同会社byNumbers</span>
       </p>
     </div>
 
     <!-- アイコンセクション -->
-    <div class="icons-section">
-      <div class="icon-item">
-        <div class="icon-circle">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-            <circle cx="12" cy="12" r="8" stroke="#2D9F4C" stroke-width="2"/>
-            <circle cx="12" cy="12" r="3" fill="#2D9F4C"/>
-          </svg>
-        </div>
-        <span class="icon-label">IoT</span>
-      </div>
 
-      <div class="icon-item">
-        <div class="icon-circle">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-            <path d="M12 2L6 8L12 8L12 14L6 14L12 20L18 14L12 14L12 8L18 8L12 2Z" fill="#2D9F4C"/>
-          </svg>
-        </div>
-        <span class="icon-label">Eco</span>
-      </div>
+    
+  </div>
 
-      <div class="icon-item">
-        <div class="icon-circle">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-            <rect x="4" y="4" width="16" height="12" stroke="#2D9F4C" stroke-width="2" rx="2"/>
-            <line x1="8" y1="20" x2="16" y2="20" stroke="#2D9F4C" stroke-width="2"/>
-            <line x1="12" y1="16" x2="12" y2="20" stroke="#2D9F4C" stroke-width="2"/>
-          </svg>
-        </div>
-        <span class="icon-label">Remote</span>
-      </div>
-    </div>
-  </div>
-  <h2></h2>
-  <div class="cards">
-    <div class="card">
-      <h3> Smart Farming</h3>
-      <p>IoTとデータで</br>自社農場運営</p>
-    </div>
-    <div class="card">
-      <h3>Natural & Echo</h3>
-      <p>環境にやさしい持続可能な農業</p>
-    </div>
-    <div class="card">
-      <h3>Remote Technology</h3>
-      <p>リモートテクノロジーで緩やかに働ける農業を</p>
-    </div>
-  </div>
 </section>
 
-<section class="section">
 
-</section>
 
 <footer>
-  <a href="https://www.instagram.com/good.farm99" target="_blank" ><img src="img/instagram-svgrepo-com.svg"  alt="logo" width="20px"></a>&nbsp;&nbsp;&nbsp;</br>  © 2025 GOOD FARM - Natural & Tech</br>
+  <a href="https://www.instagram.com/good.farm_jp" target="_blank" ><img src="img/instagram-svgrepo-com.svg"  alt="logo" width="20px"></a>&nbsp;&nbsp;&nbsp;</br>  © 2025 GOOD FARM - Natural & Tech</br>
 &nbsp;&nbsp;&nbsp;
 運営会社© 2018 合同会社byNumbers　</br>development by <a href="https://bynumbers.tokyo">byNumbers.LLC</a></br></p>
 </footer>
