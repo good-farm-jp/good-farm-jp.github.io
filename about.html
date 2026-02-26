@@ -71,10 +71,15 @@ nav a:hover {
   width: 250px;
 }
 #digicon{
-  margin-top:10%
+
   min-width:60px;
   height:auto;
 
+}
+#connecticon
+{
+  width:60px;
+  height:auto;
 }
 #logo{
   animation: float 5s ease-in-out infinite;
@@ -141,7 +146,7 @@ nav a:hover {
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 64px;
+      gap: 34px;
       margin-bottom: 40px;
       position: relative;
       z-index: 1;
@@ -225,7 +230,7 @@ nav a:hover {
     }
 
     .connector-line {
-      width: 48px;
+      width: 30px;
       height: 2px;
       background: linear-gradient(to right, #2D9F4C, transparent);
     }
@@ -375,7 +380,6 @@ flex-wrap: nowrap; /* 折り返しを禁止 */
 </nav>
 
 <section class="hero">
-<img id="digicon" width="6%" height="6%" src="img/icon@4x.png" alt="logo"> </br>
   <div class="concept-card">
     <!-- 背景装飾 -->
 
@@ -393,7 +397,8 @@ flex-wrap: nowrap; /* 折り返しを禁止 */
       <!-- 中央の接続線 -->
       <div class="connector">
         <div class="connector-line"></div>
-        <svg class="connector-star" viewBox="0 0 24 24" fill="none">
+          <img id="connecticon" width="1%" height="1%" src="img/icon@4x.png" alt="logo"> </br>
+
           <path d="M12 2L15 8L22 9L17 14L18 21L12 18L6 21L7 14L2 9L9 8L12 2Z" fill="#2D9F4C" opacity="0.5"/>
         </svg>
         <div class="connector-line right"></div>
@@ -419,7 +424,7 @@ flex-wrap: nowrap; /* 折り返しを禁止 */
 
     <!-- アイコンセクション -->
 
-    
+
   </div>
 
 </section>
