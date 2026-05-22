@@ -3,10 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ABOUT | GOOD FARM | Natural & tech</title>
-<meta name="description" content="GOOD FARM　| Natural&Tech">
-<meta name="keywords" content="GOOD FARM, 農業, スマート農業, 持続可能, エコ, テクノロジー, 日本">
-<meta name="author" content="GOOD FARM">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GOOD FARM Tech | Tech & Farming</title>
+<meta name="description" content="GOOD FARM　Tech| Tech & Farming">
+<meta name="keywords" content="GOOD FARM Tech, 農業, スマート農業, 持続可能, エコ, テクノロジー, 日本">
+<meta name="author" content="GOOD FARM Tech">
 
 <!-- 検索エンジン向け -->
 <meta name="robots" content="index, follow">
@@ -14,25 +16,30 @@
 
 <!-- OGP (SNSシェア用) -->
 <meta property="og:type" content="website">
-<meta property="og:title" content="GOOD FARM | Natural 6Tech">
+<meta property="og:title" content="GOOD FARM Tech|  Tech & Farming">
 <meta property="og:description" content="IoTとリモートテクノロジーで緩やかに働ける農業を">
 <meta property="og:url" content="https://good-farm-jp.github.io/">
-<meta property="og:image" content="https://good-farm-jp.github.io/IMG_2376.jpg">
-<meta property="og:site_name" content="GOOD FARM">
+<meta property="og:image" content="https://good-farm-jp.github.io/img/goodfarmlog_snsbanner.png">
+<meta property="og:site_name" content="GOOD FARM Tech">
 <meta property="og:locale" content="ja_JP">
 
 <!-- Twitterカード -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="GOOD FARM | Natural 6Tech">
+<meta name="twitter:title" content="GOOD FARM Tech| Tech & Farming">
 <meta name="twitter:description" content="IoTとリモートテクノロジーで緩やかに働ける農業を">
 <meta name="twitter:image" content="">
 
 <!-- ファビコン（あれば） -->
-<link rel="icon" href="img/icon@4x.png" type="image/png">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="icon" href="img/goodfarmlogFIX_noise@4x.png" type="image/png">
 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+<!-- Google Fonts の読み込み -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-MLJ7RKW6VT"></script>
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -48,9 +55,14 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, #f2efe9, #ffffff);
-  color: #333333;
+  font-family: 'Inter', sans-serif;
+  font-weight:200;
+
+  background-color: transparent;
+  background-image: linear-gradient(90deg, #e9d22680 2px, transparent 2px), linear-gradient(#e9d22680 2px, transparent 2px);
+  background-position: 10px 10px;
+  background-size: 52px 52px;
+    color: #333333;
   overflow-x: hidden;
 }
 
@@ -65,13 +77,14 @@ nav {
   justify-content: space-between;
   align-items: center;
   z-index: 1000;
+   border-bottom: 1px solid #E9D226;
 }
-h10
-{ font-size: 10px;
-  color:#3D5A40;}
+
 nav h2 {
-  color: #1e9c47;
-  font-weight: 800;
+  color: #16A39E;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  font-size:1.2em;
 }
 
 nav ul {
@@ -79,7 +92,6 @@ nav ul {
   list-style: none;
   gap: 30px;
   width: 1300px;
-
 }
 
 nav a {
@@ -108,19 +120,13 @@ nav a:hover {
   width: 250px;
 }
 #digicon{
-
   min-width:30px;
   height:auto;
 
 }
-#connecticon
-{
-  width:60px;
-  height:auto;
-}
 #logo{
   animation: float 5s ease-in-out infinite;
-
+  margin:30px;
 }
 @keyframes float {
   0%,100% { transform: translateY(0px); }
@@ -128,10 +134,10 @@ nav a:hover {
 }
 
 .hero h1 {
-  font-size: 60px;
-  color: #1e9c47;
+  font-size: 3em;
+  color: #16A39E;
   margin-top: 30px;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 .hero p {
@@ -167,14 +173,39 @@ nav a:hover {
   margin-bottom: 20px;
   color: #1e9c47;
 }
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.card {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  width: 300px;
+  box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+  border:1px solid rgba(0,0,0,0.05);
+
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
 .concept-card {
       background: white;
       border-radius: 24px;
       box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
       padding: 48px;
-      max-width: 800px;
       position: relative;
-      overflow: hidden;
+      width:100%;
+      max-width: 600px;
     }
 
 
@@ -183,7 +214,6 @@ nav a:hover {
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 34px;
       margin-bottom: 40px;
       position: relative;
       z-index: 1;
@@ -263,11 +293,10 @@ nav a:hover {
     .connector {
       display: flex;
       align-items: center;
-      gap: 8px;
     }
 
     .connector-line {
-      width: 30px;
+      width: 18px;
       height: 2px;
       background: linear-gradient(to right, #2D9F4C, transparent);
     }
@@ -289,8 +318,8 @@ nav a:hover {
     }
 
     .concept-text p {
-      font-size: 18px;
-      color: #374151;
+      font-size: 16px;
+      color: #333333;
       line-height: 1.8;
       margin-bottom: 16px;
       font-weight: 500;
@@ -298,17 +327,10 @@ nav a:hover {
 
     .highlight-box {
       display: inline-block;
-      padding: 4px 12px;
-      border-radius: 6px;
+      padding: 24px 22px;
+      border-radius: 30px;
     }
 
-    .highlight-box.gradient-right {
-      background: linear-gradient(to right, rgba(45, 159, 76, 0.1), transparent);
-    }
-
-    .highlight-box.gradient-left {
-      background: linear-gradient(to left, rgba(45, 159, 76, 0.1), transparent);
-    }
 
     .final-message {
       font-size: 20px;
@@ -321,7 +343,7 @@ nav a:hover {
       display: inline-block;
       margin: 0 8px;
       padding: 4px 16px;
-      background-color: #2D9F4C;
+      background-color: #16A39E;
       color: white;
       border-radius: 9999px;
       box-shadow: 0 4px 10px rgba(45, 159, 76, 0.3);
@@ -363,17 +385,18 @@ nav a:hover {
 
 /* ===== フッター ===== */
 footer {
-  background: #3D5A40;
-  color: #bcb8b8;
+  background: #f7f3eb;
+  color: #333333;
   padding: 40px;
   text-align: center;
+  font-size:1em;
 }
 a:link { color: #333333; }
 a:visited { color: #333333; }
 a:hover { color: #333333; }
 a:active { color: #333333; }
 /* ===== スマホ対応 ===== */
-@media(max-width:768px){
+@media(max-width:700px){
   nav {
       padding: 10px 10px; /* 左右の余白を少し詰める */
 flex-wrap: nowrap; /* 折り返しを禁止 */
@@ -381,7 +404,7 @@ flex-wrap: nowrap; /* 折り返しを禁止 */
     }
 
     nav h2 {
-      font-size: 10px; /* ロゴを少し小さく */
+      font-size: 15px; /* ロゴを少し小さく */
     }
 
     nav ul {
@@ -390,10 +413,12 @@ flex-wrap: nowrap; /* 折り返しを禁止 */
     }
 
     nav a {
-      font-size: 9px; /* 文字をスマホサイズに調整 */
+      font-size: 0.9em; /* 文字をスマホサイズに調整 */
     }
     .hero {
-      height: 80vh;
+      padding-top:50px;
+      height:auto;
+
     }
     .hero h1 {
       font-size: 36px;
@@ -406,19 +431,20 @@ flex-wrap: nowrap; /* 折り返しを禁止 */
 
 <body>
 
-<nav>
+  <nav>
 
-  <h2>   <img id="digicon" width="6%" height="6%" src="img/icon@4x.png" alt="logo"> GOOD FARM</h2>
-  <ul>
-    <li><a href="https://good-farm-jp.github.io/">Home</a></li>
-    <li><a href="https://good-farm-jp.github.io/about.html">About</a></li>
-    <li><a href="https://goodfarm.stores.jp" target="_blank" rel="noopener">ONLINE SHOP</a></li>
+    <h2>   GOOD FARM &Tech</h2>
+    <ul>
+      <li><a href="https://good-farm-jp.github.io/">Home</a></li>
+      <li><a href="https://good-farm-jp.github.io/about.html">About</a></li>
+      <li><a href="https://goodfarm.stores.jp" target="_blank" rel="noopener">ONLINE SHOP</a></li>
 
-  <li><a href="https://bynumbers.tokyo/contact" target="_blank" rel="noopener">Contact</a></li>
-  </ul>
-</nav>
+    <li><a href="https://bynumbers.tokyo/contact" target="_blank" rel="noopener">Contact</a></li>
+    </ul>
+  </nav>
 
 <section class="hero">
+
   <div class="concept-card">
     <!-- 背景装飾 -->
 
@@ -426,25 +452,33 @@ flex-wrap: nowrap; /* 折り返しを禁止 */
     <!-- コンセプト文 -->
     <div class="concept-text">
 
-      <p class="final-message">
-      <span class="badge">  運営：合同会社byNumbers</span>
-      </p>
-      <h10>注意事項：</br>GOODFARMは、自社農場生産した、</br>農産物販売のみを専門にしており</br>農業サービスや機械販売、</br>投資商品の販売等は行っておりません </br>
+        <span class="highlight-box gradient-right">
+          <span class="badge">  運営：合同会社byNumber</span></br></br>
+          注意事項：
+          GOODFARMは、</br>自社農場生産した</br>
+          農産物販売のみを専門にしており</br>
+          関係企業以外への農業サービスや</br>機械販売
+          投資商品の販売等は行っておりません</br>
+        </span>
 
-      </h10>
     </div>
 
     <!-- アイコンセクション -->
+    <div class="icons-section">
 
 
-  </div>
+
+    </div>
+
 
 </section>
 
+<section class="section">
 
+</section>
 
 <footer>
-  <a href="https://www.instagram.com/good.farm_jp" target="_blank" ><img src="img/instagram-svgrepo-com.svg"  alt="logo" width="20px"></a>&nbsp;&nbsp;&nbsp;</br>  © 2025 GOOD FARM - Natural & Tech</br>
+  <a href="https://www.instagram.com/good.farm.tech" target="_blank" ><img src="img/instagram-svgrepo-com.svg"  alt="logo" width="40px"></a></br>&nbsp;&nbsp;&nbsp;</br>  © 2025 GOOD FARM - Tech &  Farming </br>
 &nbsp;&nbsp;&nbsp;
 運営会社© 2018 合同会社byNumbers　</br>development by <a href="https://bynumbers.tokyo">byNumbers.LLC</a></br></p>
 </footer>
